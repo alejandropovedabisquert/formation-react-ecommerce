@@ -1,0 +1,40 @@
+@tailwind components;
+
+@layer components{
+    .section-title h2{
+        @apply
+            text-3xl font-semibold relative inline-block m-0 
+            before:absolute before:top-[17px] before:-left-[100px] before:w-20 before:h-0.5 before:content-[""] before:bg-black
+            after:absolute after:top-[17px] after:-right-[100px] after:w-20 after:h-0.5 after:content-[""] after:bg-black
+
+    }
+    .card{
+        @apply
+            max-w-[350px] w-full no-underline border-0 rounded-md shadow-md mb-7
+    }
+    .image-box{
+        @apply
+            relative overflow-hidden transition-all duration-500 mx-auto
+            hover:scale-105
+    }
+    .image-box img{
+        @apply
+            relative m-auto overflow-hidden w-full h-[250px] object-cover
+    }
+    .title-product{
+        @apply
+            transition-all ease-in-out duration-500 text-lg font-medium
+    }
+    .card:hover .title-product{
+        @apply
+            text-secondary-color
+    }
+    .price-product{
+        @apply
+            text-xl font-semibold text-primary-color
+    }
+    .category-title{
+        @apply
+            w-fit mx-auto py-2 px-4 text-lg font-semibold
+    }
+}

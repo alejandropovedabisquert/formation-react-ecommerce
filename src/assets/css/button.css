@@ -1,0 +1,22 @@
+@tailwind components;
+
+@layer components{
+    .btn-danger{
+        @apply rounded-xl bg-red-500 px-5 py-3 text-base mb-3 font-medium text-white transition duration-200 hover:bg-red-600 active:bg-red-700
+    }
+    .btn-outline-danger{
+        @apply rounded-xl border-2 border-red-500 px-5 py-3 text-base mb-3 font-medium text-red-500 transition duration-200 hover:bg-red-600/5 active:bg-red-700/5
+    }
+    .btn-success{
+        @apply rounded-xl bg-green-500 px-5 py-3 text-base mb-3 font-medium text-white transition duration-200 hover:bg-green-600 active:bg-green-700
+    }
+    .btn-outline-success{
+        @apply rounded-xl border-2 border-green-500 px-5 py-3 text-base mb-3 font-medium text-green-500 transition duration-200 hover:bg-green-600/5 active:bg-green-700/5
+    }
+    .btn{
+        @apply rounded-xl bg-blue-500 px-5 py-3 text-base mb-3 font-medium text-white transition duration-200 hover:bg-blue-600 active:bg-blue-700
+    }
+    .btn-outline{
+        @apply rounded-xl border-2 border-blue-500 px-5 py-3 text-base mb-3 font-medium text-blue-500 transition duration-200 hover:bg-blue-600/5 active:bg-blue-700/5
+    }
+}
